@@ -6,9 +6,10 @@ const StarshipItem = ({ starshipItem, distance, imageURL }) => {
        let maxDistance = GetMaxDistanceBeforeRefuel();
        let numberOfStops = Math.round(distance / maxDistance);
        if (maxDistance >= distance){
-           return "The ship can make it in one trip!"
+           return "The " + starshipItem.name + " can make it in one trip!"
        }else{
-           return "It would take " + numberOfStops + " stops to make the travel";
+           let p = numberOfStops > 1 ? "stops" : "stop";
+           return "It would take " + numberOfStops + " " + p + " to make the travel";
        }
     };
     
@@ -41,7 +42,16 @@ const StarshipItem = ({ starshipItem, distance, imageURL }) => {
                     {starshipItem.name}
                 </div>
                 <div className="description">
-                    {GetNumberOfStops()}
+                    <div className="ui list">
+                        <div class="item">
+                            Model : {starshipItem.model}
+                        </div>
+                        <div class="item">
+                            Passegens Capacity : {starshipItem.passengers}
+                        </div>
+                    </div>
+                    <p>{GetNumberOfStops()}</p>
+                    <p></p>
                 </div>
             </div>
         </div>

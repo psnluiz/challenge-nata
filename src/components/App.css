@@ -4,16 +4,20 @@
 }
 body {
   height: 100%;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/background2.jpg");
   background-size: cover;
   line-height: 2;
   text-align: center;
   margin-bottom: 10px;
   background-color: rgb(238, 238, 238, 0.4);
 }
-
-.ui.segment {
+.ui.container .ui.segment {
   background-color: rgb(238, 238, 238, 0.1);
+}
+
+.my-label {
+  font-size: 3.2vw;
+  color: #eee;
 }
 
 .ui.large.form {
@@ -23,7 +27,7 @@ body {
 .ui.large.button,
 .ui.large.buttons .button,
 .ui.large.buttons .or {
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-weight: bold;
 }
 
@@ -39,16 +43,6 @@ h1 {
 }
 
 .ui.form input:not([type]),
-.ui.form input[type="date"],
-.ui.form input[type="datetime-local"],
-.ui.form input[type="email"],
-.ui.form input[type="file"],
-.ui.form input[type="number"],
-.ui.form input[type="password"],
-.ui.form input[type="search"],
-.ui.form input[type="tel"],
-.ui.form input[type="text"],
-.ui.form input[type="time"],
-.ui.form input[type="url"] {
+.ui.form input[type="text"] {
   background-color: rgb(238, 238, 238, 0.4) !important;
 }

@@ -1,9 +1,9 @@
-.starship-info {
-  color: #eeeeee;
-}
-
 .header {
   font-family: "Roboto", sans-serif !important;
+}
+
+.ui.items > .item > .image + .content {
+  margin: 0 50px;
 }
 
 .ui.items > .item > .content > .header:not(.ui) {
@@ -11,17 +11,39 @@
   font-size: 4vw;
 }
 
+@media only screen and (max-width: 700px) {
+  .ui.items > .item > .content > .header:not(.ui) {
+    margin: 50px 0px;
+    font-size: 8vw;
+  }
+}
+
 .ui.items > .item > .content > .header {
   color: #eeeeee;
+}
+
+.ui.items > .item > .image > img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ui.items > .item > .content > .description {
   color: black;
   font-size: 2.6vw;
+  font-weight: 550;
+  justify-content: center;
+  text-align: left;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.items > .item > .content > .description {
+    font-size: 5vw;
+    text-align: center;
+  }
 }
 
 .ui.items > .item {
-  background-color: rgb(238, 238, 238, 0.4);
+  background-color: rgb(238, 238, 238, 0.2);
 }
 
 .ui.relaxed.divided.items > .item {
