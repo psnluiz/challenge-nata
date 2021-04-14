@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "StarWars";
+  src: url("../fonts/stjedise/STJEDISE.TTF");
+}
+body {
+  height: 100%;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(238, 238, 238, 0.4);
+}
+
+.ui.segment {
+  background-color: rgb(238, 238, 238, 0.1);
+}
+
+.ui.large.form {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.ui.large.button,
+.ui.large.buttons .button,
+.ui.large.buttons .or {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 8vw;
+  font-family: StarWars;
+  color: #eeeeee;
+  margin: 100px;
+}
+
+.ui.button {
+  margin: 15px auto;
+}
+
+.ui.form input:not([type]),
+.ui.form input[type="date"],
+.ui.form input[type="datetime-local"],
+.ui.form input[type="email"],
+.ui.form input[type="file"],
+.ui.form input[type="number"],
+.ui.form input[type="password"],
+.ui.form input[type="search"],
+.ui.form input[type="tel"],
+.ui.form input[type="text"],
+.ui.form input[type="time"],
+.ui.form input[type="url"] {
+  background-color: rgb(238, 238, 238, 0.4) !important;
+}
