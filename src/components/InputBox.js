@@ -8,10 +8,8 @@ export default class InputBox extends React.Component{
     }
 
     onDistanceSubmit = () => {
-        console.log(this.state.distance);
         this.props.onFormSubmit(this.state.distance);
     };
-
 
     render(){
         return (
@@ -20,7 +18,7 @@ export default class InputBox extends React.Component{
                     <h1>Star <br/>Travelers</h1>
                 </div>
                 <div className="ui segment">
-                    <form className="ui form large">
+                    <form className="ui form large" onSubmit={(e) => e.preventDefault()}>
                         <label className="my-label">Quão distante você quer ir no espaço?</label>
                         <div className="row">
                             <div className="ui input large" style={{marginLeft: "10px"}} >

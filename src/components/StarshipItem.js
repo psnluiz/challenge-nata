@@ -43,17 +43,13 @@ const StarshipItem = ({ starshipItem, distance, imageURL }) => {
                 <div className="header">
                     {starshipItem.name}
                 </div>
-                <div className="description">
+                <div className="description segment">
                     <div className="ui list">
-                        <div class="item">
-                            Model : {starshipItem.model}
-                        </div>
-                        <div class="item">
-                            Passegens Capacity : {starshipItem.passengers}
+                        <div className="item">
+                            Model: {starshipItem.model}
                         </div>
                     </div>
                     <p>{GetNumberOfStops()}</p>
-                    <p></p>
                 </div>
             </div>
         </div>
