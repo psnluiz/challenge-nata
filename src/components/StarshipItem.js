@@ -21,6 +21,8 @@ const StarshipItem = ({ starshipItem, distance, imageURL }) => {
                  return 730;
             case 'week':
                  return 168;
+	    default :
+		 return;
         }
     };
 
